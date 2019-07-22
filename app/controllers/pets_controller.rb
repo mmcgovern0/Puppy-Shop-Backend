@@ -4,13 +4,13 @@ class PetsController < ApplicationController
   # GET /pets
   def index
     pets = Pet.all
-    render json: PetSerializer.new(pets)
+    render json: pets
   end
 
   # GET /pets/1
   def show
     pet = Pet.find_by(id: params[:id])
-    render json: PetSerializer.new(pet)
+    render json: pet
     # render json: pet.to_json(:include => { :user => {:only => [:first_name, :last_name, :phone, :address, :city, :state, :zip]}})
   end
 
