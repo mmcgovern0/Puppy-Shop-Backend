@@ -1,39 +1,38 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
+  setup do
+    @product = products(:one)
+  end
+
   test "should get index" do
-    get products_index_url
+    get products_url, as: :json
     assert_response :success
   end
 
-  test "should get show" do
-    get products_show_url
+  test "should create product" do
+    assert_difference('Product.count') do
+      post products_url, params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, type: @product.type } }, as: :json
+    end
+
+    assert_response 201
+  end
+
+  test "should show product" do
+    get product_url(@product), as: :json
     assert_response :success
   end
 
-  test "should get new" do
-    get products_new_url
-    assert_response :success
+  test "should update product" do
+    patch product_url(@product), params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, type: @product.type } }, as: :json
+    assert_response 200
   end
 
-  test "should get create" do
-    get products_create_url
-    assert_response :success
-  end
+  test "should destroy product" do
+    assert_difference('Product.count', -1) do
+      delete product_url(@product), as: :json
+    end
 
-  test "should get edit" do
-    get products_edit_url
-    assert_response :success
+    assert_response 204
   end
-
-  test "should get update" do
-    get products_update_url
-    assert_response :success
-  end
-
-  test "should get destroy" do
-    get products_destroy_url
-    assert_response :success
-  end
-
 end

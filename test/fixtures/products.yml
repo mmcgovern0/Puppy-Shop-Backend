@@ -5,15 +5,21 @@ one:
   type: 
   category: MyString
   size: MyString
-  quantity: MyString
-  transaction_id: 1
+  description: MyString
+  quantity: 1
+  price: 1
+  brand_id: 1
   cart_id: 1
+  transaction_id: 1
 
 two:
   name: MyString
   type: 
   category: MyString
   size: MyString
-  quantity: MyString
-  transaction_id: 1
+  description: MyString
+  quantity: 1
+  price: 1
+  brand_id: 1
   cart_id: 1
+  transaction_id: 1
