@@ -2,7 +2,7 @@
 
 one:
   name: MyString
-  type: 
+  product_type: 
   category: MyString
   size: MyString
   description: MyString
@@ -14,7 +14,7 @@ one:
 
 two:
   name: MyString
-  type: 
+  product_type: 
   category: MyString
   size: MyString
   description: MyString

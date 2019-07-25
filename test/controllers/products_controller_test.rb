@@ -12,7 +12,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create product" do
     assert_difference('Product.count') do
-      post products_url, params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, type: @product.type } }, as: :json
+      post products_url, params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, product_type: @product.product_type } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update product" do
-    patch product_url(@product), params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, type: @product.type } }, as: :json
+    patch product_url(@product), params: { product: { brand_id: @product.brand_id, cart_id: @product.cart_id, category: @product.category, description: @product.description, name: @product.name, price: @product.price, quantity: @product.quantity, size: @product.size, transaction_id: @product.transaction_id, product_type: @product.product_type } }, as: :json
     assert_response 200
   end
 

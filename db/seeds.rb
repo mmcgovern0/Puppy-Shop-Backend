@@ -6,9 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-buddy = Pet.create({name: "Buddy", species: "Dog", breed: "Bichon Frise", age: 16, weight: 12, user_id: 9})
-luna = Pet.create({name: "Luna", species: "Dog", breed: "Springer Spaniel", age: 3, weight: 25, user_id: 9})
-mandy = Pet.create({name: "Mandy", species: "Dog", breed: "Golden Retriever", age: 3, weight: 45, user_id: 9})
 
 blue_buffalo3 = Product.create({name: "Life Protection Formula Adult Chicken & Brown Rice Recipe", product_type: "Dry Food", category: "Dog Food", size: "3-lb bag", description: "Blue Buffalo Life Protection Formula was created for the holistic health and well-being of adult dogs. All formulas start with real meat, whole grains, garden veggies and fruit, plus added LifeSource Bits, a precise blend of nutrients that have been enhanced with a Super 7 package of antioxidant-rich ingredients. This Adult Chicken & Brown Rice Recipe features delicious, protein-rich deboned chicken and other natural ingredients for a healthy meal your dog will love.", quantity: 100, price: 9.99, brand_id: 1})
 
@@ -19,3 +16,5 @@ blue_buffalo15 = Product.create({name: "Life Protection Formula Adult Chicken & 
 blue_buffalo24 = Product.create({name: "Life Protection Formula Adult Chicken & Brown Rice Recipe", product_type: "Dry Food", category: "Dog Food", size: "24-lb bag", description: "Blue Buffalo Life Protection Formula was created for the holistic health and well-being of adult dogs. All formulas start with real meat, whole grains, garden veggies and fruit, plus added LifeSource Bits, a precise blend of nutrients that have been enhanced with a Super 7 package of antioxidant-rich ingredients. This Adult Chicken & Brown Rice Recipe features delicious, protein-rich deboned chicken and other natural ingredients for a healthy meal your dog will love.", quantity: 100, price: 38.99, brand_id: 1})
 
 blue_buffalo30 = Product.create({name: "Life Protection Formula Adult Chicken & Brown Rice Recipe", product_type: "Dry Food", category: "Dog Food", size: "30-lb bag", description: "Blue Buffalo Life Protection Formula was created for the holistic health and well-being of adult dogs. All formulas start with real meat, whole grains, garden veggies and fruit, plus added LifeSource Bits, a precise blend of nutrients that have been enhanced with a Super 7 package of antioxidant-rich ingredients. This Adult Chicken & Brown Rice Recipe features delicious, protein-rich deboned chicken and other natural ingredients for a healthy meal your dog will love.", quantity: 100, price: 52.99, brand_id: 1})
+
+
