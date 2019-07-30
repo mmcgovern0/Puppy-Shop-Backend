@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'store/index'
+  # root to: 'store#index'
   resources :cart_products
   resources :favorite_products
   resources :carts
@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   resources :users
   resources :products
   resources :shops
+  resources :charges
+  resources :store
 end

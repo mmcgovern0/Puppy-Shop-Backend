@@ -18,6 +18,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'jwt'
 
+#https://stripe.com/docs/checkout/rails
+gem 'stripe'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
