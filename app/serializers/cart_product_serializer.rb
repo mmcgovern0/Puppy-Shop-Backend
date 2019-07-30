@@ -1,7 +1,6 @@
-class FavoriteProductSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :product_id, :product
-  # belongs_to :user
-  # belongs_to :product
+class CartProductSerializer < ActiveModel::Serializer
+  attributes :id, :cart_id, :product_id, :product, :user_id
+
 
   def product
     {
